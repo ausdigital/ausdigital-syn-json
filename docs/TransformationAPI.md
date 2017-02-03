@@ -1,6 +1,6 @@
 # Transformation API
 
-The transformation API specification defiens a standard interface for lossless, schema-aware transformations 
+The transformation API specification defines a standard interface for lossless, schema-aware transformations 
 
 * UBL2JSON : from standard namespace qualified UBL 2.1 XML to a simple JSON representation. 
 * JSON2UBL : from a simple JSON representation to standard namespace qualified UBL 2.1 XML instance.
