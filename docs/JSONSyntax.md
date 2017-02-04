@@ -1,6 +1,6 @@
 # JSON Syntax for UBL documents
 
-The normative form for UBL documents is XML and the normative definition is the UBL XSD Schema lubrary.  Therefore the JSON syntax implementation for UBL occasionally refers to the XML form when defining the JSON rules.
+The normative form for UBL documents is XML and the normative definition is the UBL XSD Schema library.  Therefore the JSON syntax implementation for UBL occasionally refers to the XML form when defining the JSON rules.
 
 ## JSON Schema Rules
 
@@ -8,13 +8,13 @@ The normative form for UBL documents is XML and the normative definition is the 
 * The JSON schema MUST be a standalone single root schema that does not import external fragments but MAY make use of local schema references ($ref) for re-use of common structures.  It is recognised that several different document schema will define the same common structures but this SHOULD be managed at the semantic model level and not at the runtime schema level.
 * JSON type definitions MUST use exactly the same name as the corresponding UBL XML element name but without any namespace prefix (ie use the UNQUALIFIED UBL element name).
 * JSON schema type definitions MUST include a "description" property and it's value SHOULD equal the corresponding UBL schema <ccts:Definition> property.
-* JSON schema type definitions SHOULD NOT use "enum" types for validation of code list values.  This is to allow codes lists to be managed and versioned searpately from their use in business document schema.  Please refer to the [code lists](https://github.com/ausdigital/ausdigital-code) specification for the treatment of code lists.
+* JSON schema type definitions SHOULD NOT use "enum" types for validation of code list values.  This is to allow codes lists to be managed and versioned separately from their use in business document schema.  Please refer to the [code lists](https://github.com/ausdigital/ausdigital-code) specification for the treatment of code lists.
 
 ## JSON Instance Rules
 
 * The JSON instance MUST conform to the corresponding JSON schema which is recommended to be attached to the instance by using a Link header in http request according to http://json-schema.org/latest/json-schema-core.html#rfc.section.9.1. For example:
 `Link: <https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/spec/v1.0.0/Invoice.json>; rel="describedby"`
-* The JSON instance SHOULD have a "customizationID" element that contains the URI of the relevant implemenation context because that will define the relevant code-list values (eg BPay as a payment means in Australia) and business rules (eg that tax invoices over $1000 must contain the buyers ABN) that would be validated.
+* The JSON instance SHOULD have a "customizationID" element that contains the URI of the relevant implementation context because that will define the relevant code-list values (eg BPay as a payment means in Australia) and business rules (eg that tax invoices over $1000 must contain the buyers ABN) that would be validated.
 * If "customizationID" is present then the JSON instance MUST comply with the code-list and business rules defined for that context.  Note that the code-list rules are defined in the [code-lists specification](http://ausdigital-code.readthedocs.io/en/latest/) and the business rules are defined together with each semantic specification (eg [billing semantics](http://ausdigital-bill.readthedocs.io/en/latest/))
 
 ## CCTS Property Mapping
@@ -23,11 +23,11 @@ All UBL types inherit from the UN/CEFACT Core Component Technical Specification 
 * JSON has no equivalent of XML element attributes
 * All the CCTS attributes are optional with often overlapping definitions and little implementation guidance for allowed values.  This leads to confusion and interoperability problems. For example, 8 of the 9 attributes of the CCTS "Code" type all serve to identify different attributes of the code list scheme (listID, listAgencyID, listAgencyName, listName, listVersionID, listURI, listSchemeURI).  A single unique identifier of the code list scheme would be sufficient.
 
-In mapping UBL to JSON there is a balance to be struck between a simple mapping algorithm (leading to relatively more complext JSON) and a more complex set of mapping rules (that could deliver simpler JSON).  This specification prioritises simple JSON even at the cost of more complex mapping rules when transforming to/from UBL XML.
+In mapping UBL to JSON there is a balance to be struck between a simple mapping algorithm (leading to relatively more complex JSON) and a more complex set of mapping rules (that could deliver simpler JSON).  This specification prioritises simple JSON even at the cost of more complex mapping rules when transforming to/from UBL XML.
 
 ### CCTS AmountType
 
-JSON representation SHALL NOT specify currecy for every data element.  Instead it SHALL use the UBL document level currency indicator "documentCurrencyCode":"AUD"
+JSON representation SHALL NOT specify currency for every data element.  Instead it SHALL use the UBL document level currency indicator "documentCurrencyCode":"AUD"
 
 Therefore the UBL XML 
 
@@ -39,7 +39,7 @@ Maps to the UBL JSON
 
 ### CCTS BinaryObjectType 
 
-UBL supports either embedded or referenced binary attachments.  The JSON implementaiton SHALL always use the UBL "ExternalReference" Model.  
+UBL supports either embedded or referenced binary attachments.  The JSON implementation SHALL always use the UBL "ExternalReference" Model.  
 
 Therefore the UBL XML
 

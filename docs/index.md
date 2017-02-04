@@ -14,7 +14,7 @@ This document describes a JSON based syntax and processing model for UBL semanti
 * A lossless transformation model between UBL XML and JSON representations.
 * A simple JSON processing model based on a RESTful Validation API 
 
-The intent is to provide developers with a much simpler implementation model than the XSD/Schematron/Genericode alternative whilst maintianing interoperability with the UBL XML standard.
+The intent is to provide developers with a much simpler implementation model than the XSD/Schematron/Genericode alternative whilst maintaining interoperability with the UBL XML standard.
 
 This Specification
 
@@ -24,7 +24,7 @@ This Specification
 
 ## Introduction
 
-Widespread adoption of the e-invoicing framework depends on the provision of clear, unambiguous and simple specifications that are developer freindly and impose very low implementation costs.  
+Widespread adoption of the e-invoicing framework depends on the provision of clear, unambiguous and simple specifications that are developer friendly and impose very low implementation costs.  
 
 As shown in the diagram below, the standard UBL XSD/Schemmatron/Genericode processing model imposes significant complexity burdens on implementers.  An alternative REST/JSON microservices model reduces implementation cost and complexity to a near zero minimum.
 

@@ -1,6 +1,6 @@
 **[Back to AusDigital.org](http://ausdigital.org/)**
 
-# UBL Synatax 2.0 Extened Codes Lists Specification
+# UBL Syntax 2.0 Extended Codes Lists Specification
 
  * ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
  * Editor: Steve Capell
@@ -8,8 +8,8 @@
 
 ## Introduction
 
-This specification defines a JSON representation for standard code lists (eg the ISO-3166 coutnry code list) and also for context specific subsets and extensions.  
-The specification for standard Code Lists (eg the ISO-3166 coutnry code list) is maintained separately - [UBL Codes Lists Management Specification](http://ausdigital-code.readthedocs.io).  
+This specification defines a JSON representation for standard code lists (eg the ISO-3166 country code list) and also for context specific subsets and extensions.  
+The specification for standard Code Lists (eg the ISO-3166 country code list) is maintained separately - [UBL Codes Lists Management Specification](http://ausdigital-code.readthedocs.io).  
 
 The JSON code list representation and standard API definition provides a alternative to the UBL [Genericode](https://docs.oasis-open.org/codelist/cs-genericode-1.0/doc/oasis-code-list-representation-genericode.html) and [Context/Value Association](http://docs.oasis-open.org/codelist/cs01-ContextValueAssociation-1.0/doc/context-value-association.html) specifications (and the associated XSLT based runtime validation framework) for implementers that prefer a REST/JSON model.
 
@@ -22,7 +22,7 @@ Code lists often need to be restricted or extended for specific business context
  * The context specific lists are maintained in the /contexts path and MUST be a copy of a code list in the /core path with only the following changes:
     * Addition of a suffix "contextnn" to the file name - for example PaymentMeansCode-2.1-context01.json
     * "ListURI" element to reflect the new code list URL.
-    * A list of ProcessID references as shown in the example above.  These MUST match the "customizationID" field contents in the corresponding buisness documents that will use the context specific code list.
+    * A list of ProcessID references as shown in the example above.  These MUST match the "customizationID" field contents in the corresponding business documents that will use the context specific code list.
     * New codes MAY added or existing codes MAY be removed from the object array of codes as needed for the business context - but existing codes MUST NOT be redefined.
   
 To create a context specific code list, clone this repository, create the new code list, notify the working group via the slack channel, and issue a pull request.
@@ -72,7 +72,7 @@ The document validation API behaviour is designed to allow codes used within mes
 
  * For each code data type in the document, validate the code against the code list identified by the SchemeURI (eg "urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMeansCode:D10B").
  * If the "customizationID" element is present in the document, then use the context specific code list with a matching identifier in the "ProcessID" array.  Otherwise, use the standard code list.
- * There are serveral error conditions.  The error code and error message are described in the table below and MUST be inserted into the standard error structure defined in the The [validation API](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/ValidationAPI.md) specification.
+ * There are several error conditions.  The error code and error message are described in the table below and MUST be inserted into the standard error structure defined in the The [validation API](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/ValidationAPI.md) specification.
 
 |Error Code|Error Message|
 |----------|-------------|
