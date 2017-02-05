@@ -1,12 +1,9 @@
-**[Back to AusDigital.org](http://ausdigital.org/)**
-
-# UBL XML Syntax
-
-## DBC UBL Syntax 1.0 Syntax Specification
-
+ * Spec ID: ausdigital.org/ausdigital-syn/1.0
  * ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
  * Editor: the Digital Business Council (Council)
  * Contributors: 
+
+## DBC UBL Syntax 1.0 Syntax Specification
 
 ## Introduction
 

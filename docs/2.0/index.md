@@ -1,12 +1,9 @@
-**[Back to AusDigital.org](http://ausdigital.org/)**
-
-# JSON Syntax
-
-## DBC UBL Syntax 2.0 Specification
-
+ * Spec ID: ausdigital.org/ausdigital-syn/2.0
  * ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
  * Editor: Steve Capell
  * Contributors: 
+
+## DBC UBL Syntax 2.0 Specification
 
 This document describes a JSON based syntax and processing model for UBL semantics. It includes
 
@@ -14,7 +11,7 @@ This document describes a JSON based syntax and processing model for UBL semanti
 * A lossless transformation model between UBL XML and JSON representations.
 * A simple JSON processing model based on a RESTful Validation API 
 
-The intent is to provide developers with a much simpler implementation model than the XSD/Schematron/Genericode alternative whilst maintaining interoperability with the UBL XML standard.
+The intent is to provide developers with a much simpler implementation model than the XSD/Schematron/Genericode alternative whilst maintianing interoperability with the UBL XML standard.
 
 This Specification
 
@@ -24,7 +21,7 @@ This Specification
 
 ## Introduction
 
-Widespread adoption of the e-invoicing framework depends on the provision of clear, unambiguous and simple specifications that are developer friendly and impose very low implementation costs.  
+Widespread adoption of the e-invoicing framework depends on the provision of clear, unambiguous and simple specifications that are developer freindly and impose very low implementation costs.  
 
 As shown in the diagram below, the standard UBL XSD/Schemmatron/Genericode processing model imposes significant complexity burdens on implementers.  An alternative REST/JSON microservices model reduces implementation cost and complexity to a near zero minimum.
 
