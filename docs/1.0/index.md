@@ -20,7 +20,7 @@ The eInvoicing Semantic Model has been defined and elaborated in a consultative 
 
 [DBC e-invoice semantic model](https://github.com/ausdigital/ausdigital-bill/blob/master/docs/eInvoicing_Semantic_Model_v1.0.pdf)
 
-[DBC e-invoice Implementation Guide](https://github.com/ausdigital/ausdigital-syn-v1/blob/master/docs/eInvoicing_Implementation_Guide_v1.0.pdf) 
+[DBC e-invoice Implementation Guide](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/1.0/eInvoicing_Implementation_Guide_v1.0.pdf) 
 
 The XML instances MUST comply with the [UBL 2.1 Specification](http://docs.oasis-open.org/ubl/UBL-2.1.html).
 
