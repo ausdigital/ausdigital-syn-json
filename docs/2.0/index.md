@@ -44,7 +44,21 @@ development at
 Comments and feedback are encouraged and welcome. Pull requests with improvements are welcome too.
 
 
-## Licence
+## Glossary
+
+Phrase | Definition
+------------ | -------------
+ausdigital-syn/2 | This specification.
+ausdigital-code/1 | Version 1 of the AusDigital [Code Lists Management (CODE)](http://ausdigital.org/code-lists) specification.
+ausdigital-bill/1 | Version 1 of the AusDigital [Bill Semantics (BILL)](http://ausdigital.org/bill) specification.
+ausdigital-syn/1 | Version 1 of the AusDigital [UBL Syntax(SYN)](http://ausdigital.org/syn) specification.
+
+This service depends on - TBA.
+
+The TBA specification depends on this document. Note, TBA.
+ 
+
+ ## Licence
 
 Copyright (c) 2016 the Editor and Contributors. All rights reserved.
 
