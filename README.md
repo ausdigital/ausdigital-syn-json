@@ -3,7 +3,7 @@
  * [Version 1.0](/docs/1.0/index.md) - XML Representation
  * [Version 2.0](/docs/2.0/index.md) - JSON Representation
  
-Specification: [https://ausdigital-syn.readthedocs.io/](https://ausdigital-syn.readthedocs.io/)
+Specification: [http://ausdigital.org/specs/ausdigital-syn/2.0/](http://ausdigital.org/specs/ausdigital-syn/2.0/)
 
 Community discussion/support: [ausdigital.org](http://ausdigital.org)
 

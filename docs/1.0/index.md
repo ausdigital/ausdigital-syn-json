@@ -1,9 +1,10 @@
- * Spec ID: ausdigital.org/ausdigital-syn/1.0
- * ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
- * Editor: the Digital Business Council (Council)
- * Contributors: 
-
-# AusDigital UBL Syntax (SYN) 1.0 Specification
+---
+title: "AusDigital UBL Syntax (SYN) 1.0 Specification"
+specID: "ausdigital-syn/1"
+status: "![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)"
+editors: "Digital Business Council (Council)"
+contributors: 
+---
 
 ## Introduction
 
@@ -48,7 +49,7 @@ Comments and feedback are encouraged and welcome. Pull requests with improvement
 Phrase | Definition
 ------------ | -------------
 ausdigital-syn/1 | This specification.
-ausdigital-code/1 | Version 1 of the AusDigital [Code Lists Management (CODE)](http://ausdigital.org/code-lists) specification.
+ausdigital-code/1 | Version 1 of the AusDigital [Code Lists Management (CODE)](http://ausdigital.org/ausdigital-code) specification.
 ausdigital-bill/1 | Version 1 of the AusDigital [Bill Semantics (BILL)](http://ausdigital.org/bill) specification.
 ausdigital-syn/2 | Version 2 of the AusDigital [UBL Syntax(SYN)](http://ausdigital.org/syn) specification.
 

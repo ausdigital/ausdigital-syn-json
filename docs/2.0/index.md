@@ -1,9 +1,10 @@
- * Spec ID: ausdigital.org/ausdigital-syn/2.0
- * ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
- * Editor: [Steven Capell](mailto:steven.capell@gosource.com.au)
- * Contributors: 
-
-# AusDigital UBL Syntax (SYN) 2.0 Specification
+---
+title: "AusDigital UBL Syntax (SYN) 2.0 Specification"
+specID: "ausdigital-syn/1"
+status: "![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)"
+editors: "[Steven Capell](mailto:steven.capell@gosource.com.au)"
+contributors: 
+---
 
 ## Introduction
 
@@ -49,7 +50,7 @@ Comments and feedback are encouraged and welcome. Pull requests with improvement
 Phrase | Definition
 ------------ | -------------
 ausdigital-syn/2 | This specification.
-ausdigital-code/1 | Version 1 of the AusDigital [Code Lists Management (CODE)](http://ausdigital.org/code-lists) specification.
+ausdigital-code/1 | Version 1 of the AusDigital [Code Lists Management (CODE)](http://ausdigital.org/ausdigital-code) specification.
 ausdigital-bill/1 | Version 1 of the AusDigital [Bill Semantics (BILL)](http://ausdigital.org/bill) specification.
 ausdigital-syn/1 | Version 1 of the AusDigital [UBL Syntax(SYN)](http://ausdigital.org/syn) specification.
 
@@ -93,9 +94,9 @@ The normative form for UBL documents is XML and the normative definition is the 
 ## JSON Instance Rules
 
 * The JSON instance MUST conform to the corresponding JSON schema which is recommended to be attached to the instance by using a Link header in http request according to http://json-schema.org/latest/json-schema-core.html#rfc.section.9.1. For example:
-`Link: <https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/spec/v1.0.0/Invoice.json>; rel="describedby"`
+`Link: <https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/resources/ausdigital-syn/2.0/spec/Invoice.json>; rel="describedby"`
 * The JSON instance SHOULD have a "customizationID" element that contains the URI of the relevant implementation context because that will define the relevant code-list values (eg BPay as a payment means in Australia) and business rules (eg that tax invoices over $1000 must contain the buyers ABN) that would be validated.
-* If "customizationID" is present then the JSON instance MUST comply with the code-list and business rules defined for that context.  Note that the code-list rules are defined in the [code-lists specification](http://ausdigital-code.readthedocs.io/en/latest/) and the business rules are defined together with each semantic specification (eg [billing semantics](http://ausdigital-bill.readthedocs.io/en/latest/))
+* If "customizationID" is present then the JSON instance MUST comply with the code-list and business rules defined for that context.  Note that the code-list rules are defined in the [CODE](http://ausdigital.org/ausdigital-code) specification and the business rules are defined together with each semantic specification (eg [BILL 1.0](http://ausdigital.org/specs/ausdigital-bill/1.0/) specification)
 
 ## CCTS Property Mapping
 
@@ -141,7 +142,7 @@ Maps to the UBL JSON
 
 ### CCTS CodeType
 
-The reference codelist scheme for each coded element in a UBL JSON is defined as part of the implementation profile and is referenced through the CustomizationID as described in the [code-list specification](http://ausdigital-code.readthedocs.io/en/latest/).
+The reference codelist scheme for each coded element in a UBL JSON is defined as part of the implementation profile and is referenced through the CustomizationID as described in the [CODE](http://ausdigital.org/ausdigital-code) specification.
 
 Therefore the UBL XML
 
@@ -165,7 +166,7 @@ Maps to the UBL JSON
 
 ### CCTS IdentifierType
 
-The JSON code-lists specification SHALL maintain normative code-list of unique short names (eg "ABN") for each identifier category (eg party), thereby allowing a XML code type to map to a simple name-value pair in JSON.
+The JSON Code Lists specification SHALL maintain normative code-list of unique short names (eg "ABN") for each identifier category (eg party), thereby allowing a XML code type to map to a simple name-value pair in JSON.
 
 Therefore the UBL XML
 
@@ -244,7 +245,7 @@ Maps to the UBL JSON
 ## Introduction
 
 This specification defines a JSON representation for standard code lists (eg the ISO-3166 country code list) and also for context specific subsets and extensions.  
-The specification for standard Code Lists (eg the ISO-3166 country code list) is maintained separately - [UBL Codes Lists Management Specification](http://ausdigital-code.readthedocs.io).  
+The specification for standard Code Lists (eg the ISO-3166 country code list) is maintained separately - [CODE 1.0](http://ausdigital.org/specs/ausdigital-code/1.0) specification.  
 
 The JSON code list representation and standard API definition provides a alternative to the UBL [Genericode](https://docs.oasis-open.org/codelist/cs-genericode-1.0/doc/oasis-code-list-representation-genericode.html) and [Context/Value Association](http://docs.oasis-open.org/codelist/cs01-ContextValueAssociation-1.0/doc/context-value-association.html) specifications (and the associated XSLT based runtime validation framework) for implementers that prefer a REST/JSON model.
 
@@ -714,11 +715,11 @@ The API is very simple - it accepts an instance document and returns a list of z
 
 ## Code-List Error Response Codes
 
-Are maintained together with the [code-lists specification](http://ausdigital-code.readthedocs.io/en/latest/) 
+Are maintained together with the [CODE 1.0](http://ausdigital.org/specs/ausdigital-code/1.0) specification  
 
 ## Business Rules Error Response Codes
 
-Are maintained together with the relevant semantic specification - for example [billing semantics](http://ausdigital-bill.readthedocs.io/en/latest/)
+Are maintained together with the relevant semantic specification - for example [BILL 1.0](http://ausdigital.org/specs/ausdigital-bill/1.0/) specification
 
 # Related Material
 
