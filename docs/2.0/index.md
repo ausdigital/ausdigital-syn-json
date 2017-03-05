@@ -687,7 +687,7 @@ The validation API specification defines a standard interface for the validation
 * Codes : that the code values used in the JSON instance are defined in a relevant code-list, which may be either a core code-list or a context specific code list.
 * Rules : that the JSON instance complies with the specific business rules for the implementation context identified by the "ProfileID" element in the JSON instance.
 
-The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/JSONSyntax.md).
+The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](+The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/2.0/index.md#json-syntax-for-ubl-documents).).
 
 ## Validation Context
 
