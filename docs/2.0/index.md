@@ -251,7 +251,7 @@ The JSON code list representation and standard API definition provides a alterna
 
 ## Context specific lists
 
-**[DBC context specific code lists repository](https://github.com/ausdigital/ausdigital-syn/tree/master/codes/contexts)**
+**[DBC context specific code lists repository](https://github.com/ausdigital/ausdigital-syn/tree/master/resources/2.0/codes/contexts)**
 
 Code lists often need to be restricted or extended for specific business contexts.  For example, in the Australian context, it may be useful to remove most of the European specific payment means codes from the standard UBL code list and to add a code for BPAY.  
   
@@ -265,13 +265,13 @@ To create a context specific code list, clone this repository, create the new co
 
 ## Identifier Scheme Lists
 
-**[identifier scheme code lists repository](https://github.com/ausdigital/ausdigital-syn/tree/master/codes/identifiers)** 
+**[identifier scheme code lists repository](https://github.com/ausdigital/ausdigital-syn/tree/master/resources/2.0/codes/identifiers)** 
 
 This specification introduces an additional type of code list that is a reference list of identifier schemes.  The purpose of these lists is to deliver consistency in the UBL representation of identifier schemes like the ABN as a Party identification.  The code lists also support lossless transformation between simple JSON elements like "ABN":"34132141612" and the full CCTS compliant UBL XML representation by including the CCTS Scheme identification information with each scheme code. 
 
 ```
   "CodeList": {
-    "ListURI": "https://github.com/ausdigital/ausdigital-code/tree/master/syn/codes/identifiers/PartyIdentifiers-dbc.01.json",
+    "ListURI": "https://github.com/ausdigital/ausdigital-code/tree/master/syn/resources/2.0/codes/identifiers/PartyIdentifiers-dbc.01.json",
     "SchemeIdentification": {
       "listAgencyName": "Digital Business COuncil",
       "ListID": "PartyID",
@@ -324,8 +324,8 @@ The transformation API specification defines a standard interface for lossless, 
 * UBL2JSON : from standard namespace qualified UBL 2.1 XML to a simple JSON representation. 
 * JSON2UBL : from a simple JSON representation to standard namespace qualified UBL 2.1 XML instance.
 
-The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/JSONSyntax.md).
-The XML instances MUST comply with the [UBL Syntax 1.0 Specification](https://github.com/ausdigital/ausdigital-syn-v1/blob/master/docs/XMLSyntax.md).
+The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/2.0/index.md#json-syntax-for-ubl-documents).
+The XML instances MUST comply with the [UBL Syntax 1.0 Specification](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/1.0/index.md#xml-syntax-for-ubl-documents).
 
 ## API Specification
 
@@ -693,7 +693,7 @@ The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](https://g
 
 As defined by the [UBL Customisation Guide](http://docs.oasis-open.org/ubl/guidelines/UBL2-Customization1.0cs01.pdf) and as implemented by the DBC, UBL allows for the notions of "CustomizationID" and "ProfileID" that are used to define additional restrictions or rules that apply in a specific geographic or industry or process context.   In general, the "CustomizationID" represents a broad context whilst "ProfileID" reflects further restrictions within that broad context.   The Ausdigital.org suite of semantic specifications uses these two identifiers as follows:
 
-* There is one "CustomizationID" value that indicates the Australian Digital Business Council restrictions on the global UBL documents. The set of DBC restrictions is evident when comparing the DBC [CoreInvoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/1.0/specrt/maindoc/CoreInvoice-1.0.xsd) with the equivalent global UBL 2.1 [Invoice Schema](http://docs.oasis-open.org/ubl/os-UBL-2.1/xsdrt/maindoc/UBL-Invoice-2.1.xsd).  
+* There is one "CustomizationID" value that indicates the Australian Digital Business Council restrictions on the global UBL documents. The set of DBC restrictions is evident when comparing the DBC [CoreInvoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/1.0/spec/maindoc/CoreInvoice-1.0.xsd) with the equivalent global UBL 2.1 [Invoice Schema](http://docs.oasis-open.org/ubl/os-UBL-2.1/xsdrt/maindoc/UBL-Invoice-2.1.xsd).  
 * There are a number of "ProfileID" values that represent the rules that apply when the core invoice is used in specific business processes such as RCTI, TaXReceipt, CreditNote, etc.  The rules are defined with each semantic specification (eg [billing semantics](https://github.com/ausdigital/ausdigital-bill)
 
 All validation rules are tagged with the relevant customizationID(s) and profileID(s) that apply.  Each instance document also contains both these identifiers.   Therefore the validation model is to examine the instance document to determine which validation rules should be applied.
