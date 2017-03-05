@@ -324,8 +324,8 @@ The transformation API specification defines a standard interface for lossless, 
 * UBL2JSON : from standard namespace qualified UBL 2.1 XML to a simple JSON representation. 
 * JSON2UBL : from a simple JSON representation to standard namespace qualified UBL 2.1 XML instance.
 
-The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/2.0/index.md#json-syntax-for-ubl-documents).
-The XML instances MUST comply with the [UBL Syntax 1.0 Specification](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/1.0/index.md#xml-syntax-for-ubl-documents).
+The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](http://ausdigital.org/specs/ausdigital-syn/2.0/#json-syntax-for-ubl-documents).
+The XML instances MUST comply with the [UBL Syntax 1.0 Specification](http://ausdigital.org/specs/ausdigital-syn/1.0/#xml-syntax-for-ubl-documents).
 
 ## API Specification
 
@@ -687,7 +687,7 @@ The validation API specification defines a standard interface for the validation
 * Codes : that the code values used in the JSON instance are defined in a relevant code-list, which may be either a core code-list or a context specific code list.
 * Rules : that the JSON instance complies with the specific business rules for the implementation context identified by the "ProfileID" element in the JSON instance.
 
-The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/2.0/index.md#json-syntax-for-ubl-documents).
+The JSON instances MUST comply with the [UBL Syntax 2.0 Specification](http://ausdigital.org/specs/ausdigital-syn/2.0/#json-syntax-for-ubl-documents).
 
 ## Validation Context
 
