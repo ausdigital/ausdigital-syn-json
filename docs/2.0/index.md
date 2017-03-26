@@ -329,11 +329,11 @@ The XML instances MUST comply with the [UBL Syntax 1.0 Specification](http://aus
 
 ## API Specification
 
-Is maintained at swaggerhub : **[UBL Syntax 2.0 Transformation and Validation API](https://app.swaggerhub.com/api/ausdigital/ausdigital-syn/1.0)**
+Is maintained as swagger document : **[UBL Syntax 2.0 Transformation and Validation API](http://ausdigital.org/specs/ausdigital-syn/2.0/api)**
 
 ## UBL2JSON Error Response Codes
 
-All error responses will comply with the ausdigital standard [RESTful Errors structure](https://app.swaggerhub.com/domains/ausdigital/ErrorModel/1.0).   
+All error responses will comply with the ausdigital standard [RESTful Errors structure](http://ausdigital.org/specs/ausdigital-syn/2.0/api).   
 
 |Error Code | Error Message|
 |-----------|--------------|
@@ -343,7 +343,7 @@ All error responses will comply with the ausdigital standard [RESTful Errors str
 
 ## JSON2UBL Error Response Codes
 
-All error responses will comply with the ausdigital standard [RESTful Errors structure](https://app.swaggerhub.com/domains/ausdigital/ErrorModel/1.0).   
+All error responses will comply with the ausdigital standard [RESTful Errors structure](http://ausdigital.org/specs/ausdigital-syn/2.0/api).   
 
 |Error Code | Error Message|
 |-----------|--------------|
@@ -700,9 +700,9 @@ All validation rules are tagged with the relevant customizationID(s) and profile
 
 ## API Validator Specification
 
-Is maintained at swaggerhub : **[UBL Syntax 2.0 Transformation and Validation API](https://app.swaggerhub.com/api/ausdigital/ausdigital-syn/1.0)**
+Is maintained as swagger document : **[UBL Syntax 2.0 Transformation and Validation API](http://ausdigital.org/specs/ausdigital-syn/2.0/api)**
 
-The API is very simple - it accepts an instance document and returns a list of zero or more error responses. All error responses will comply with the ausdigital standard [RESTful Errors structure](https://app.swaggerhub.com/domains/ausdigital/ErrorModel/1.0).  
+The API is very simple - it accepts an instance document and returns a list of zero or more error responses. All error responses will comply with the ausdigital standard [RESTful Errors structure](http://ausdigital.org/specs/ausdigital-syn/2.0/api).  
 
 ## Document Structure Error Response Codes
 
