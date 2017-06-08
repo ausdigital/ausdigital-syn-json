@@ -1,0 +1,44 @@
+{
+  "CodeList": {
+    "ListURI": "https://raw.githubusercontent.com/ausdigital/ausdigital-syn-json/master/resources/1.0/codes/identifiers/PartyIdentifiers-dbc.01.json",
+    "SchemeIdentification": {
+      "listAgencyName": "Digital Business COuncil",
+      "ListID": "PartyID",
+      "listSchemeURI": "urn:codes.digitalbusinesscouncil.com.au:partyIdentifiers:ver1.0",
+      "ListName": "Party Identifier Schemes",
+      "listAgencyID": "Uigitalbusinesscouncil.com.au",
+      "listVersionID": "1.0"
+    },
+    "Codes": [
+      {
+        "Code": "ABN",
+        "Name": "IAustralian Business Number",
+        "SchemeIdentification":{
+          "schemeID":"urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151",
+          "schemeName":"ABN",
+          "schemeAgencyID":"ato.gov.au",
+          "schemeAgencyName":"Australian Taxation Office",
+          "schemeVersionID":"1.0",
+          "schemeDataURI":"http://abr.business.gov.au/abrxmlsearchRPC/Forms/SearchByABNv201408.aspx",
+          "schemeURI":"urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151"
+        },
+      },
+      {
+        "Code":"DUNS",
+        "Name": "Dun and Bradstreeet Number",
+        "SchemeIdentification":{
+          "schemeID":"urn:oasis:names:tc:ebcore:partyid-type:iso6523:060",
+          "schemeName":"DUNS",
+          "schemeAgencyID":"dnb.com",
+          "schemeAgencyName":"Dun and Bradstreet",
+          "schemeVersionID":"1.0",
+          "schemeDataURI":"http://www.dnb.com.au/express/",
+          "schemeURI":"urn:oasis:names:tc:ebcore:partyid-type:iso6523:060"
+          },
+      },
+      {
+        "etc":" "
+      },
+    ]
+  }
+}
