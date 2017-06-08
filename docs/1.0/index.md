@@ -725,6 +725,6 @@ Are maintained together with the relevant semantic specification - for example [
 
  * AusDigital eInvoicing Implementation Guide (v1.0, available [here](https://github.com/ausdigital/ausdigital-syn-xml/blob/master/docs/1.0/eInvoicing_Implementation_Guide_v1.0.pdf)), which provides background to the [AusDigital](http://ausdigital.org) community process.
  * [GitHub issues](https://github.com/ausdigital/ausdigital-syn-json/issues/) for collaborating on the development of the SYN-JSON.
- * A reference [SYN-JSON service](https://syn-json.testpoint.io/) (for testing and development purposes).
+ * A reference [SYN-JSON service](https://syn.testpoint.io/) (for testing and development purposes).
  * Free, Open-Source Software [SYN-JSON implementation](https://github.com/test-point/testpoint-syn-json).
  * An automated [SYN-JSON test suite](https://github.com/test-point/testpoint-syn-json).
