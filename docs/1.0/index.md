@@ -52,7 +52,7 @@ Phrase | Definition
 ausdigital-syn-json/1 | This specification.
 ausdigital-code/1 | Version 1 of the AusDigital [Code Lists Management (CODE)](http://ausdigital.org/ausdigital-code) specification.
 ausdigital-bill/1 | Version 1 of the AusDigital [Bill Semantics (BILL)](http://ausdigital.org/ausdigital-bill) specification.
-ausdigital-syn-xml/1 | Version 1 of the AusDigital [UBL XML Syntax(SYN-XML)](http://ausdigital.org/ausdigital-syn-xml) specification.
+ausdigital-syn-xml/1 | Version 1 of the AusDigital [UBL XML Syntax(SYN-XML)](http://ausdigital.org/ausdigital-syn) specification.
 
 This service depends on - TBA.
 
@@ -726,5 +726,5 @@ Are maintained together with the relevant semantic specification - for example [
  * AusDigital eInvoicing Implementation Guide (v1.0, available [here](https://github.com/ausdigital/ausdigital-syn-xml/blob/master/docs/1.0/eInvoicing_Implementation_Guide_v1.0.pdf)), which provides background to the [AusDigital](http://ausdigital.org) community process.
  * [GitHub issues](https://github.com/ausdigital/ausdigital-syn-json/issues/) for collaborating on the development of the SYN-JSON.
  * A reference [SYN-JSON service](https://syn.testpoint.io/) (for testing and development purposes).
- * Free, Open-Source Software [SYN-JSON implementation](https://github.com/test-point/testpoint-syn-json).
- * An automated [SYN-JSON test suite](https://github.com/test-point/testpoint-syn-json).
+ * Free, Open-Source Software [SYN-JSON implementation](https://github.com/test-point/testpoint-syn).
+ * An automated [SYN-JSON test suite](https://github.com/test-point/testpoint-syn).
