@@ -304,7 +304,7 @@ This specification introduces an additional type of code list that is a referenc
 
 ## Validation API behaviour
 
-The document validation API behaviour is designed to allow codes used within messages to be validated against a context specific code list where appropriate but to default to the standard code list where a restricted version is not defined for a given process.  The [validation API](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.json) SHALL
+The document validation API behaviour is designed to allow codes used within messages to be validated against a context specific code list where appropriate but to default to the standard code list where a restricted version is not defined for a given process.  The [validation API](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.yaml){:target="_blank"} SHALL
 
  * For each code data type in the document, validate the code against the code list identified by the SchemeURI (eg "urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMeansCode:D10B").
  * If the "customizationID" element is present in the document, then use the context specific code list with a matching identifier in the "ProcessID" array.  Otherwise, use the standard code list.
@@ -329,11 +329,11 @@ The XML instances MUST comply with the [UBL XML Syntax 1.0 Specification](http:/
 
 ## API Specification
 
-Is maintained as swagger document : **[UBL JSON Syntax 1.0 Transformation and Validation API](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.json)**
+Is maintained as swagger document : **[UBL JSON Syntax 1.0 Transformation and Validation API](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.yaml){:target="_blank"}**
 
 ## UBL2JSON Error Response Codes
 
-All error responses will comply with the ausdigital standard [RESTful Errors structure](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.json).   
+All error responses will comply with the ausdigital standard [RESTful Errors structure](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.yaml){:target="_blank"}.   
 
 |Error Code | Error Message|
 |-----------|--------------|
@@ -343,7 +343,7 @@ All error responses will comply with the ausdigital standard [RESTful Errors str
 
 ## JSON2UBL Error Response Codes
 
-All error responses will comply with the ausdigital standard [RESTful Errors structure](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.json).   
+All error responses will comply with the ausdigital standard [RESTful Errors structure](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.yaml){:target="_blank"}.   
 
 |Error Code | Error Message|
 |-----------|--------------|
@@ -700,9 +700,9 @@ All validation rules are tagged with the relevant customizationID(s) and profile
 
 ## API Validator Specification
 
-Is maintained as swagger document : **[UBL JSON Syntax 1.0 Transformation and Validation API](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.json)**
+Is maintained as swagger document : **[UBL JSON Syntax 1.0 Transformation and Validation API](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.yaml){:target="_blank"}**
 
-The API is very simple - it accepts an instance document and returns a list of zero or more error responses. All error responses will comply with the ausdigital standard [RESTful Errors structure](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.json).  
+The API is very simple - it accepts an instance document and returns a list of zero or more error responses. All error responses will comply with the ausdigital standard [RESTful Errors structure](http://swagger.testpoint.io/?url=http://ausdigital.org/specs/ausdigital-syn-json/1.0/swagger.yaml){:target="_blank"}.  
 
 ## Document Structure Error Response Codes
 
